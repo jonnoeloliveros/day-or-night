@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap");
+:root {
+  --primary-charcoal: #242424;
+  --primary-pure-white: #ffffff;
+  --primary-lime-green: #AFC54F;
+  --secondary-lavender: #9E86CC;
+  --secondary-teal: #3FBCB9;
+  --secondary-pink: #FF93AE;
+  --secondary-light-green: #C5ED9F;
+  --secondary-pastel-yellow: #FAF09C;
+  --secondary-warm-brown: #DD8965;
+  --secondary-peach: #F3B988;
+  --secondary-beige: #F6DFBF;
+  --secondary-off-white: #F8F8F8;
+  --secondary-dark-gray: #2F2F2F;
+  --secondary-medium-gray: #424242;
+  --font-host-grotesk: "Host Grotesk", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Default (Day Mode) */
+body {
+  position: relative;
+  background-color: var(--primary-pure-white);
+  color: var(--secondary-medium-gray);
+  font-family: var(--font-host-grotesk);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.94px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+body .day {
+  display: block;
+}
+body .night {
+  display: none;
+}
+body.night-mode {
+  background-color: var(--primary-charcoal);
+  color: var(--secondary-off-white);
+}
+body.night-mode .day {
+  display: none;
+}
+body.night-mode .night {
+  display: block;
+}
+body.night-mode a {
+  color: var(--secondary-off-white);
+  text-decoration: none;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+body.night-mode header {
+  background-color: var(--primary-charcoal);
+}
+body a {
+  color: var(--secondary-medium-gray);
+  text-decoration: none;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+body img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+body .main-btn {
+  min-width: 281px;
+  padding: 27px 32px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--secondary-medium-gray);
+  color: var(--secondary-off-white);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+body header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px 36px;
+  background-color: var(--primary-pure-white);
+  z-index: 999;
+}
+body header .nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+body header .nav-menu nav.nav-links ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 37px;
+}
+body header .nav-menu nav.nav-links ul li.nav-link a {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 19.95px;
+  text-align: center;
+}
+body header .nav-menu nav.nav-links ul li.nav-link.active a {
+  font-weight: 700;
+}
+body footer {
+  margin-bottom: 81px;
+}
+body footer .nav-menu {
+  padding-top: 59px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+body footer .nav-menu nav.nav-links ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 37px;
+}
+body footer .nav-menu nav.nav-links ul li.nav-link a {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 19.95px;
+  text-align: center;
+}
+body footer .nav-menu nav.nav-links ul li.nav-link.active a {
+  font-weight: 700;
+}
+body .container {
+  width: 100%;
+  max-width: 1114px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+body main p:last-child {
+  margin-bottom: 0;
+}
+body main .intro-container {
+  padding: 76px 16px;
+}
+body main section.about {
+  position: relative;
+  min-height: 831px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+body main section.about .about-container {
+  max-width: 1000px;
+  padding: 32px 16px;
+  text-align: center;
+}
+body main section.about .about-container h2 {
+  font-size: 82px;
+  font-weight: 400;
+  line-height: 92.25px;
+  margin-bottom: 27px;
+}
+body main section.about img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+body main section.products-gallery {
+  padding: 77px 83px;
+}
+body main section.products-gallery .products-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 21px;
+  margin-bottom: 72px;
+}
+body main section.products-gallery .products-gallery-grid .products-gallery-item {
+  border-radius: 24px;
+  overflow: hidden;
+}
+body .footer-logo {
+  max-width: 259px;
+  margin: 0 auto 11.55px;
+}
+body .site-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 42px;
+}
+
+/*# sourceMappingURL=main.css.map */
